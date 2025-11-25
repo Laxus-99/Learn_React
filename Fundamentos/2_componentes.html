@@ -13,8 +13,21 @@
         <script src="http://unpkg.com/@tailwindcss/browser@4"></script>
 
         <script type="text/babel">
+            function Button() {
+                return <button> Botão</button>;
+            }
+
+            function App() {
+                return (
+                    <main className="p-3 flex gap-2">
+                        <Button />
+                        <Button />
+                    </main>
+                );
+            }
+
             ReactDOM.createRoot(document.getElementById("root")).render(
-                <h1>Hello World!</h1>,
+                <App />,
             );
         </script>
     </body>
